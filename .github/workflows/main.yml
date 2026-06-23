@@ -1,0 +1,19 @@
+name: Sync to HuggingFace Space
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Push to HuggingFace Space
+        env:
+          HF: ${{ secrets.HF }}
+        run: |
+          git remote add space https://elmerick7:$HF@huggingface.co/spaces/elmerick7/kinyarwanda-clinical-assistant
+          git push --force space main
