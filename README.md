@@ -1,2 +1,14 @@
-# kinyarwanda-clinical-assistant
-AI-powered clinical text translation and summarization for Kinyarwanda — bridging healthcare communication gaps in Rwanda.
+---
+title: Kinyarwanda Clinical Assistant
+emoji: 🏥
+colorFrom: green
+colorTo: blue
+sdk: gradio
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+
+# Kinyarwanda Clinical Assistant
+
+AI-powered tool to translate and summarize clinical text from English to Kinyarwanda for healthcare workers in Rwanda.
